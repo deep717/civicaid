@@ -8,7 +8,7 @@ export default function Results() {
   const income = Number(params.get('income') || 0);
   const householdSize = Number(params.get('householdSize') || 0);
 
-  const eligibility = income < (1500 + 500 * (householdSize - 1)) ? 'Eligible' : 'Not Eligible';
+  const eligibility = income < (1500 + 500 * (householdSize - 1)) ? 'You are Eligible' : 'You are not Eligible';
 
   return (
     <div className="p-10 text-center max-w-xl mx-auto">
